@@ -159,7 +159,6 @@ while run:
                 choice = input("Invalid answer. Please enter 'Y' or 'N'. ")
         elif step_inside == "N" or step_inside == "n":
             door_choice = 2
-            youve_been_here_before = True
             print("Your fingers tremble as you immediately close the door with a slam. You back away from the door, head turning towards the other door.")
         else:
             step_inside = input("Invalid answer choice. Please enter 'Y' or 'N'. ")
@@ -177,16 +176,48 @@ while run:
                 for i in range(len(ending3))
                     print(ending3[i])
                     print()
+                print("ENDING 3: GALACTIC SPACE MONSTER?!?")
+                break
             elif choice == "n" or choice == "N":
-                
+                for i in range(len(c3_2)):
+                    print(c3_2[i])
+                    print()
+                choice = input("Pry it off?(Y/N) ")
+                if choice == "y" or choice == "Y":
+                    for i in range(len(c4_2)):
+                        print(c4_2[i])
+                        print()
+                    door_choice = 1
+                elif choice == "n" or choice == "N":
+                    for i in range(len(c5_2)):
+                        print(c5_2[i])
+                        print()
+                    choice = input("Turn back?Y/N) ")
+                    if choice == "Y" or choice == "y":
+                        for i in range(len(ending4)):
+                            print(ending4[i])
+                            print()
+                        print("ENDING 4: Pitiful.")
+                        break
+                    elif choice == "n" or choice == "N":
+                        for i in range(len(ending5)):
+                            print(ending5[i])
+                            print()
+                        print("ENDING 5: You hear nothing.")
+                        if youve_been_here_before:
+                            for i in range(len(ending6)):
+                                print(ending6[i])
+                                print()
+                            print("ENDING 6: Welcome back.")
+                        break
+                    else:
+                        choice = input("Invalid answer choice. Please enter 'Y' or 'N'. ")
+                else:
+                    choice = input("Invalid answer choice. Please enter 'Y' or 'N'. ")
             else:
                 choice = input("Invalid answer choice. Please choose 'Y' or 'N'. ")
         elif step_in == "n" or step_in == "N":
             door_choice = 1
-            youve_been_here_before = True
             print("You shut the door, backing away. It's eery and gives you a creepy feeling of deja vu. Swiftly, you head to open the other door.")
         else:
             step_in = input("Invalid answer choice. Please choose 'Y' or 'N'. ")
-            
-
-
