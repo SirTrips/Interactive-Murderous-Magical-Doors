@@ -1,0 +1,192 @@
+'''
+Code: Magic door flashbang pew pew
+Creators: Aria Xiao and Trinity Triplett
+'''
+#Welcome user to project
+name = input("Welcome! What is your name, user? ")
+print("This is an interactive game of scenarios you must go through!")
+'''
+Door 1
+'''
+run_count = 3
+turn_around = 3
+#opening paragraph
+one = "The door opened."
+two = "A silent creak resounded as you twist the door handle open."
+three = "Darkness was all that you could see, but you can hear rustling from the other side."
+four = "A warm, soft breeze blows through the door with the following smell of soil and sweet fragrant flowers."
+p1_1 = [one,two,three,four]
+
+#paragraph 2
+five = "As you step inside, the ground below you feels mushy and soft. Unsettled by the unstable feeling, you slowly back up, only to feel nothing behind you."
+six = "You're trapped inside."
+seven = ". . ."
+eight = "Soon, light peeks through the darkness of the room. From the edges of your vision, you can make out bits of the tall greenery surrounding you. When your vision is regained completely, you suddenly hear a soft clicking sound coming from behind you."
+p2_1 = [five,six,seven,eight]
+
+#ending 1
+nine1 = "A shiver runs up your spine as you realize something was staring at you. Immediately, you take off, bolting anywhere ahead of you, refusing to turn around and confront what was behind you." 
+ten1 = "But the more you run, the louder the clicking gets."
+eleven1 = "Louder,"
+twelve1 = "Louder,"
+thirteen1 = "And LOUDER."
+fourteen1 = "Then it stopped."
+fifteen1 = "You heave, upper half leaning forward, and head spinning from the lack of oxygen. You have a hand over your chest, deeply inhaling the oxygen your body needs. Once you regain your composure, you look around to see… nothing."
+sixteen1 = "It's gone."
+seventeen1 = "Now, where are you?"
+end1_1 = [nine1,ten1,eleven1,twelve1,thirteen1,fourteen1,fifteen1,sixteen1,seventeen1]
+
+#paragraph 3
+nine2 = "Bones of some mammal.. Or thing."
+ten2 = "That is no animal."
+eleven2 = "The whole creature is made up of bones. Floating bones. Completely detached."
+twelve2 = "The skull's blank stare is directly faced towards you."
+thirteen2 = "It's almost as if it's peering straight through you and into your soul."
+fourteen2 = "Your gaze breaks away from the trance only when it cocks its head slightly."
+p3_1 = [nine2,ten2,eleven2,twelve2,thirteen2,fourteen2]
+
+#paragraph 4 
+fifteen2 = ". . ."
+sixteen2 = "You approach the creature. After all, curiosity killed the cat…"
+seventeen2 = "The skull faces you directly once more, the darkness of the lack of eyes the most capturing feature."
+p4_1 = [fifteen2,sixteen2,seventeen2]
+
+#ending2
+eighteen = "Your breath catches in your throat. A sudden pang of dizziness had you clutching your head, knees buckling. Your vision steadily dimmed… and then it all went dark."
+nineteen = "…But satisfaction brought it back."
+twenty = ". . ."
+twentyone = "You wake up. The dizziness is faint, but your head still throbs in pain."
+twentytwo = "When your hand reaches up to cradle your head, you don't feel the touch of soft skin."
+twentythree = "But rather large, dark claws that could shred up meat."
+twentyfour = "You're no longer human.. But what's the problem with that?"
+twentyfive = "You filled the scratching itch of curiosity."
+ending1_2 = [eighteen,nineteen,twenty,twentyone,twentytwo,twentythree,twentyfour,twentyfive]
+
+
+'''
+Door 2
+'''
+#opening
+uno = "The door opened."
+dos = "A silent creak resounded as you twist the door handle open."
+tres = "Darkness was all that you could see, but you can make out dim lights on the ceiling."
+c1_2 = [uno,dos,tres]
+#second chapter
+cuatro = "The room remains dark, the only light source being the specks of lights above."
+cinco = "You hesitantly step forward, looking up to see the light sources. They’re like stars in a clear night sky."
+sies = "Suddenly, you feel the platform below you moving, and your arms flew out to balance yourself from falling. The sound of rumbling comes out from beneath, startling you."
+c2_2 = [cuatro, cinco, sies]
+#third ending
+siete = "Upon peering down, you see tentacle-like appendages holding you up. The grumbling was low growling… From some one-eyed sci-fi creature."
+ocho = "Its eye opened, the sclera and pupil a disgusting pus yellow. The iris was a pale orange.. And it was looking straight at you."
+nueve = "Your breath hitches as its appendages begin moving faster and flipping, as if it wasn’t already hard enough to stay on the tentacle."
+diez = "Soon enough, you are caught off guard, and the appendage sends you flying. It isn’t until moments later you fall, crashing down into the darker depths.."
+once = "Where the creature is waiting to feast."
+ending3 = [siete,ocho,nueve,diez,once]
+#third chapter
+siete2 = "You resist the urge to peer down, continuing to traverse onwards. The dimly lit room was enough to see the rest of the platforms, and you hop across them quickly. You land on the dark platform, a straight pathway to somewhere."
+ocho2 = "A guttural growl resounds the room after you get across, but you’re already on the other side that it doesn’t concern you anymore. You turn around, only to get your leg tug back with a tentacle pulling at you."
+c3_2 = [siete2,ocho2]
+#fourth chapter
+nueve2 = "You pull at the suction cups stuck to you, ripping the tentacle stuck to your leg off. It might’ve hurt a bit, but you didn’t want to go down where that beast lies."
+diez2 = "You go into a little sprint, heading across the dark pathway and reaching a door."
+once2 = "You open the door to see darkness with a smell of soil and sweet fragrant flowers"
+c4_2 = [nueve2,diez2,once2]
+#fifth chapter
+doce = "You let the tentacle latch onto you, while you traverse forwards. The appendage continues to yank at you, trying to bring you back down."
+trece = "However, its attempts are fruitless, and it eventually lets go of you with an animalistic whine."
+c5_2 = [doce,trece]
+#fourth ending
+catorce = "You turned back, moving forwards a couple of steps before peering down at the darkness below."
+quince = "The creature lets out another keen whine, before you feel yourself being yanked forwards. Your body can’t pull yourself back, as multiple tentacles are latched onto your legs and ankles. They’re pulling roughly, making sure that you don’t escape."
+diecisies = "You struggle, hands grasping at the ledge of the platform that supposedly leads to your escape. However, that dream is long gone, and you are dragged down to what awaits you below."
+ending4 = [catorce,quince,diecisies]
+#fifth ending
+diecisiete = "You ignore its desperate cries, knowing it all was a façade to deceive and lure. You knew better than to trust it."
+dieciocho = "You traverse forwards, ignoring its last minute pleas and opening the door."
+ending5 = [diecisiete,dieciocho]
+diecinueve = "Upon opening the door, you take a step backwards. The darkness and smell of soil and sweet fragrant flowers are all too familiar. Your hand trembles, realizing it’s a loop."
+veinte = "You’re stuck here."
+ending6 = [diecinueve,veinte]
+
+#loop
+youve_been_here_before = False
+run = True
+
+while run:
+    print("In front of you are two doors.")
+    print("The first of the two doors is made of a brown, layered wood while the door frame is made of sedimentery rock, bits of white scattered around occasionally.")
+    print("The second door is composed of a dark purple, almost black material. The door frame where it stands is made of rock with small craters scattered around.")
+    door_choice = int(input("Which door will you choose to enter?(1/2) "))
+    if door_choice == 1:
+        for i in range(len(p1_1)):
+            print(p1_1[i])
+            print()
+            step_inside = "y"
+        if step_inside == "y" or step_inside == "Y":
+            for i in range(len(p2_1)):
+                print(p2_1[i])
+                print("")
+            choice = input("Will you turn around?(Y/N) ")
+            if choice == "Y" or choice == "y":
+                for i in range(len(p3_1)):
+                    print(p3_1[i])
+                    print()
+                choice = input("Approach it.(Y/N) ")
+                if choice == "y" or choice == "Y":
+                    for i in range(len(p4_1)):
+                        print(p4_1[i])
+                        print()
+                    choice = input("Turn away.(Y?/N) ")
+                    if turn_around >= 0:
+                        not_so_choicey = input("TURN AWAY. DON'T SAY I DIDN'T WARN YOU.")
+                        print()
+                    for i in range(len(ending1_2)):
+                        print(ending1_2[i])
+                        print()
+                    print("ENDING 2: Curiosity killed the cat, but satisfaction brought it back.")
+                    break
+                else:
+                    choice = input("I'm afraid that's an invalid answer choice. APPROACH IT.(Y/Y) ")
+                        
+            elif choice == "N" or choice == "n":
+                for i in range(len(end1_1)):
+                    print(end1_1[i])
+                    print()
+                print("ENDING 1: RUN.")
+                break
+            else:
+                choice = input("Invalid answer. Please enter 'Y' or 'N'. ")
+        elif step_inside == "N" or step_inside == "n":
+            door_choice = 2
+            youve_been_here_before = True
+            print("Your fingers tremble as you immediately close the door with a slam. You back away from the door, head turning towards the other door.")
+        else:
+            step_inside = input("Invalid answer choice. Please enter 'Y' or 'N'. ")
+    if door_choice == 2:
+        for i in range(len(c1_2)):
+            print(c1_2[i])
+            print()
+        step_in = input("Step in?(Y/N) ")
+        if step_in == "y" or step_in == "Y":
+            for i in range(len(c2_2)):
+                print(c2_2[i])
+                print()
+            choice = input("Look down?(Y/N) ")
+            if choice == "Y" or choice == "y":
+                for i in range(len(ending3))
+                    print(ending3[i])
+                    print()
+            elif choice == "n" or choice == "N":
+                
+            else:
+                choice = input("Invalid answer choice. Please choose 'Y' or 'N'. ")
+        elif step_in == "n" or step_in == "N":
+            door_choice = 1
+            youve_been_here_before = True
+            print("You shut the door, backing away. It's eery and gives you a creepy feeling of deja vu. Swiftly, you head to open the other door.")
+        else:
+            step_in = input("Invalid answer choice. Please choose 'Y' or 'N'. ")
+            
+
+
