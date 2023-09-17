@@ -1,8 +1,8 @@
 '''
-Code: Magic door flashbang pew pew
+Code: Interactive Murderous Magical Doors
 Creators: Aria Xiao and Trinity Triplett
 '''
-#Welcome user to project
+# Welcome User to Project
 name = input("Welcome! What is your name, user? ")
 print("This is an interactive game of scenarios you must go through!")
 '''
