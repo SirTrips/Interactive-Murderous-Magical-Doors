@@ -62,6 +62,19 @@ twentyfour = "You're no longer human.. But what's the problem with that?"
 twentyfive = "You filled the scratching itch of curiosity."
 ending1_2 = [eighteen,nineteen,twenty,twentyone,twentytwo,twentythree,twentyfour,twentyfive]
 
+#ending7
+e1 = "You scramble, closing your eyes as you run wildly and blindly. Don't look." 
+e2 = "Don't look."
+e3 = "DON'T LOOK."
+e4 = "You scrunch your eyes closed tighter, running faster."
+e5 = "The clicking was getting quieter and further."
+e6 = "You press forwards, pushing onwards until you hit wood."
+e7 = "Wood... That isn't bark."
+e8 = "Peeking, you open your eyes to see another door. The same door similar to the other door that you haven't entered."
+e9 = "Nothing surrounds the floating door, but the handle is unlocked."
+e10 = "You know you can open it, but you don't. Absolutely not."
+e11 = "You've made that mistakes before... Haven't you?"
+ending7 = [e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11]
 
 '''
 Door 2
@@ -138,16 +151,22 @@ while run:
                         print(p4_1[i])
                         print()
                     choice = input("Turn away.(Y?/N) ")
-                    if turn_around >= 0:
-                        not_so_choicey = input("TURN AWAY. DON'T SAY I DIDN'T WARN YOU.")
+                    if choice == "y" or choice == "Y" and youve_been_here_before:
+                       for i in range(len(ending7)):
+                            print(ending7[i])
+                            print()
+                       print("ENDING 7: No.")
+        
+                    elif turn_around >= 0:
+                        choice = input("TURN AWAY. DON'T SAY I DIDN'T WARN YOU.")
                         print()
-                    for i in range(len(ending1_2)):
-                        print(ending1_2[i])
-                        print()
-                    print("ENDING 2: Curiosity killed the cat, but satisfaction brought it back.")
-                    break
-                else:
-                    choice = input("I'm afraid that's an invalid answer choice. APPROACH IT.(Y/Y) ")
+                        for i in range(len(ending1_2)):
+                            print(ending1_2[i])
+                            print()
+                        print("ENDING 2: Curiosity killed the cat, but satisfaction brought it back.")
+                        break
+                    else:
+                        choice = input("I'm afraid that's an invalid answer choice. APPROACH IT.(Y/Y) ")
                         
             elif choice == "N" or choice == "n":
                 for i in range(len(end1_1)):
@@ -173,7 +192,7 @@ while run:
                 print()
             choice = input("Look down?(Y/N) ")
             if choice == "Y" or choice == "y":
-                for i in range(len(ending3))
+                for i in range(len(ending3)):
                     print(ending3[i])
                     print()
                 print("ENDING 3: GALACTIC SPACE MONSTER?!?")
